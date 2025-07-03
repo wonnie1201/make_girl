@@ -164,7 +164,7 @@ export default function ResultPage() {
           gravity={0.05}
           initialVelocityY={-15}
           friction={0.99}
-          origin={{ x: 0.5, y: 1 }}
+          //origin={{ x: 0.5, y: 1 }}
         />
       )}
       <div className="flex flex-col items-center justify-center flex-1 w-full max-w-lg mx-auto py-20">
