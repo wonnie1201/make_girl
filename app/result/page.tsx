@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Confetti from "react-confetti";
 
 const RESULTS = [
   { type: "The Comedian", emoji: "🤣", percent: "Top 4%" },
@@ -76,6 +77,7 @@ function getResultFromAnswers(answers: any) {
 export default function ResultPage() {
   const router = useRouter();
   const [toast, setToast] = useState("");
+  const [showConfetti, setShowConfetti] = useState(false);
   let answers: any = null;
   if (typeof window !== "undefined") {
     try {
@@ -84,6 +86,14 @@ export default function ResultPage() {
     } catch {}
   }
   const result = getResultFromAnswers(answers);
+
+  useEffect(() => {
+    if (result) {
+      setShowConfetti(true);
+      const timer = setTimeout(() => setShowConfetti(false), 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [result]);
 
   const handleRetake = () => {
     if (typeof window !== "undefined") {
@@ -145,6 +155,18 @@ export default function ResultPage() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-[#18171a] px-4">
+      {showConfetti && typeof window !== "undefined" && (
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight}
+          numberOfPieces={50}
+          recycle={false}
+          gravity={0.05}
+          initialVelocityY={-15}
+          friction={0.99}
+          origin={{ x: 0.5, y: 1 }}
+        />
+      )}
       <div className="flex flex-col items-center justify-center flex-1 w-full max-w-lg mx-auto py-20">
         {result ? (
           <>
