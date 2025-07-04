@@ -111,25 +111,25 @@ export default function ResultPage() {
     let shareText = "";
     switch (result.percent) {
       case "Top 4%":
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nCertified meme lord. Bow before me. 😂🔥\nBet you can't top this. Prove me wrong 👉 https://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nCertified meme lord. Bow before me. 😂🔥\nBet you can't top this. Prove me wrong 👉 https://relatableguy.naviahub.dev/`;
         break;
       case "Top 10%":
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nElite meme game only. Are you even on my level? 😎\nTry to beat me 👉 https://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nElite meme game only. Are you even on my level? 😎\nTry to beat me 👉 https://relatableguy.naviahub.dev/`;
         break;
       case "Top 20%":
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nNot quite a legend, but still a meme boss. 😂\nThink you can do better? 👉 https://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nNot quite a legend, but still a meme boss. 😂\nThink you can do better? 👉 https://relatableguy.naviahub.dev/`;
         break;
       case "Top 30%":
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nGuess I'm just lurking in the meme world... 👀\nRoast me or try to beat my score 👉 https://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nGuess I'm just lurking in the meme world... 👀\nRoast me or try to beat my score 👉 https://relatableguy.naviahub.dev/`;
         break;
       case "Top 50%":
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nClassic. I'm the average meme enjoyer. Maybe next time I'll go viral? 🥲\nThink you can flex harder? 👉 https://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nClassic. I'm the average meme enjoyer. Maybe next time I'll go viral? 🥲\nThink you can flex harder? 👉 https://relatableguy.naviahub.dev/`;
         break;
       case "Top 80%":
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nBruh... I'm basically a meme ghost. My friends are still waiting for my reply. 👻\nCan you do any worse? Try it 👉 https://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test.\nBruh... I'm basically a meme ghost. My friends are still waiting for my reply. 👻\nCan you do any worse? Try it 👉 https://relatableguy.naviahub.dev/`;
         break;
       default:
-        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test!\nhttps://yourdomain.com`;
+        shareText = `I just got "${result.type}" ${result.emoji} (${result.percent}) on the Meme Dating Test!\nhttps://relatableguy.naviahub.dev/`;
     }
 
     if (typeof window !== "undefined" && navigator.clipboard) {

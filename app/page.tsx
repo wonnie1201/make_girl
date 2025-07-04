@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: "Which Meme Guy Are You? 😂 Find Out in the 100% Relatable Dating Test!",
     description: "For guys only! Are you the Ghost 👻, the Simp 🥲, or the Meme Lord 🤣? Discover your dating meme type in 2 minutes!",
-    url: "https://yourdomain.com",
+    url: "https://relatableguy.naviahub.dev/",
     images: [
       {
         url: "/heart_thumbnail_1200x630.png",

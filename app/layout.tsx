@@ -35,6 +35,17 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <footer className="w-full py-8 px-4 bg-[#18171a]">
+          <div className="text-center text-gray-400 text-sm">
+            We focus on relationship content.<br />
+            All legal notices are managed by <a
+              href="https://www.naviahub.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-300 underline hover:text-pink-400"
+            >NaviaHub</a>.
+          </div>
+        </footer>
       </body>
     </html>
   );
